@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirlinesModel6StoreContainer" CdmEntityContainer="AirlinesEntities18">
+    <EntitySetMapping Name="Cancles">
+      <EntityTypeMapping TypeName="AirlinesModel6.Cancle">
+        <MappingFragment StoreEntitySet="Cancle">
+          <ScalarProperty Name="fto" ColumnName="fto" />
+          <ScalarProperty Name="ffrom" ColumnName="ffrom" />
+          <ScalarProperty Name="flightname" ColumnName="flightname" />
+          <ScalarProperty Name="flightid" ColumnName="flightid" />
+          <ScalarProperty Name="cancleid" ColumnName="cancleid" />
+          <ScalarProperty Name="ticketnumber" ColumnName="ticketnumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

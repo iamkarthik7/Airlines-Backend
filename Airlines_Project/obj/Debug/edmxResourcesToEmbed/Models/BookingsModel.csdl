@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirlinesModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Booking">
+    <Key>
+      <PropertyRef Name="ticketnumber" />
+    </Key>
+    <Property Name="ticketnumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="flightid" Type="Int32" />
+    <Property Name="flightname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ftime" Type="Time" Precision="2" />
+    <Property Name="ttime" Type="Time" Precision="2" />
+    <Property Name="ticketprice" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="AirlinesEntities14" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bookings" EntityType="Self.Booking" />
+  </EntityContainer>
+</Schema>

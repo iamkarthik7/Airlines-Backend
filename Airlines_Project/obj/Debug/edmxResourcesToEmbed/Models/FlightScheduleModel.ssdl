@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirlinesModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Flightdetails">
+    <Key>
+      <PropertyRef Name="flightid" />
+    </Key>
+    <Property Name="flightid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="flightname" Type="varchar" MaxLength="20" />
+    <Property Name="ffrom" Type="varchar" MaxLength="20" />
+    <Property Name="fto" Type="varchar" MaxLength="20" />
+    <Property Name="ftime" Type="time" Precision="4" />
+    <Property Name="ttime" Type="time" Precision="4" />
+    <Property Name="tprice" Type="int" />
+  </EntityType>
+  <EntityContainer Name="AirlinesModel2StoreContainer">
+    <EntitySet Name="Flightdetails" EntityType="Self.Flightdetails" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

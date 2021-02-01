@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirlinesModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ContactU">
+    <Key>
+      <PropertyRef Name="contactid" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phonenumber" Type="Int64" />
+    <Property Name="message" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contactid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="AirlinesEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ContactUs" EntityType="Self.ContactU" />
+  </EntityContainer>
+</Schema>

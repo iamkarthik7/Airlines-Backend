@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirlinesModel4StoreContainer" CdmEntityContainer="AirlinesEntities10">
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="AirlinesModel4.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="paymentid" ColumnName="paymentid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="card" ColumnName="card" />
+          <ScalarProperty Name="cvc" ColumnName="cvc" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirlinesModelStoreContainer" CdmEntityContainer="AirlinesEntities4">
+    <EntitySetMapping Name="Registers">
+      <EntityTypeMapping TypeName="AirlinesModel.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="Passinger_Id" ColumnName="Passinger_Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Nation" ColumnName="Nation" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="phno" ColumnName="phno" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirlinesModel7StoreContainer" CdmEntityContainer="AirlinesEntities20">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="AirlinesModel7.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="ticketnumber" ColumnName="ticketnumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="flightid" ColumnName="flightid" />
+          <ScalarProperty Name="flightname" ColumnName="flightname" />
+          <ScalarProperty Name="ffrom" ColumnName="ffrom" />
+          <ScalarProperty Name="fto" ColumnName="fto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

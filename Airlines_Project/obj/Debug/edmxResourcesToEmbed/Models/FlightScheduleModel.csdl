@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirlinesModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Flightdetail">
+    <Key>
+      <PropertyRef Name="flightid" />
+    </Key>
+    <Property Name="flightid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="flightname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ffrom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fto" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ftime" Type="Time" Precision="4" />
+    <Property Name="ttime" Type="Time" Precision="4" />
+    <Property Name="tprice" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="AirlinesEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Flightdetails" EntityType="Self.Flightdetail" />
+  </EntityContainer>
+</Schema>

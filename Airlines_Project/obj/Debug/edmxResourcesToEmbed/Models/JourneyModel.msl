@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirlinesModel5StoreContainer" CdmEntityContainer="AirlinesEntities13">
+    <EntitySetMapping Name="Journeys">
+      <EntityTypeMapping TypeName="AirlinesModel5.Journey">
+        <MappingFragment StoreEntitySet="Journey">
+          <ScalarProperty Name="Journeyid" ColumnName="Journeyid" />
+          <ScalarProperty Name="from" ColumnName="from" />
+          <ScalarProperty Name="to" ColumnName="to" />
+          <ScalarProperty Name="depature" ColumnName="depature" />
+          <ScalarProperty Name="arrival" ColumnName="arrival" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
